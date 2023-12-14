@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event page</title>
+    <style>
+        .first{
+            text-align: center;
+        }
+        .second{
+            border:1px solid black;
+            justify-self: flex-start;
+            justify-content: center;
+            padding: 50px;   
+            display:flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            margin-bottom:120px;
+            margin-right:90px;
+            margin-left:120px;
+        }
+        .photo{
+            margin:60px;
+            margin-top:30px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+    <div class="first">
+        <h1>Event 1</h1>
+        <h3>Number of available seats:23</h3>
+    </div>
+        <div class="second">
+            <div class="photo">
+                <img src="event.jpeg">
+            </div>
+                <form>
+                    <label class="name">Name:</label>
+                    <input type="text" name="fname"><br><br>
+                    <label class="email">Email:</label>
+                    <input type="email"name="sec"><br><br>
+                    <label class="ph">Phoneno:</label>
+                    <input type="tel" name="num"><br><br>
+                    <label class="seat">Number of seats:</label>
+                    <select id="seats">
+                        <option>1</option>
+                        <option>2</option>
+                    </select><br>
+                    <label>Number of Attendee 2</label>
+                    <input type="text"><br><br>
+                    <input type="submit" value="submit">
+                    <input type="submit" value="cancel">
+                </form>
+        </div>
+    </div>
+</body>
+</html>
